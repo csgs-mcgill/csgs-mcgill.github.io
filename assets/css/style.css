@@ -1,0 +1,204 @@
+:root {
+  /* McGill red, #ed1b2f */
+  --bulma-primary-h: 354deg;
+  --bulma-primary-s: 85%;
+  --bulma-primary-l: 52%;
+
+  /* Colour right side of logo, #a20f1c */
+  --bulma-link-h: 355deg;
+  --bulma-link-s: 83%;
+  --bulma-link-l: 35%;
+
+  /* Off-white, #fcecec */
+  --bulma-text-h: 53deg;
+  --bulma-text-s: 73%;
+  --bulma-text-l: 96%;
+  
+  /* color: #1f2933; */
+  background: #faf7f9;
+  --bulma-family-primary: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+.hero-background {
+  margin: 0;
+  background-image: 
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/mcconnell.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.title {
+  color: var(--bulma-text);
+}
+
+.navbar-item {
+  color: var(--bulma-text);
+}
+
+.button {
+  color: var(--bulma-text);
+}
+
+.resources-page {
+  min-height: calc(100vh - 3.25rem);
+  background-color: #faf7f9;
+}
+
+.resources-content {
+  max-width: 60rem;
+}
+
+.resources-content p,
+.resources-content li {
+  color: #000;
+}
+
+.resources-lounge-image img {
+  border-radius: 0.25rem;
+}
+
+.exec-team {
+  min-height: calc(100vh - 3.25rem);
+}
+
+.exec-team-list {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.exec-team-list > .columns {
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.exec-member {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.exec-member-photo {
+  width: 7rem;
+  height: 7rem;
+  flex: 0 0 7rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.exec-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.exec-member-details .title,
+.exec-member-details .subtitle {
+  margin-bottom: 0;
+}
+
+.exec-member-details .subtitle {
+  margin-top: 0.25rem;
+}
+
+#previous-events {
+  background-color: #faf7f9;
+}
+
+.previous-events-carousel {
+  position: relative;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.previous-events-viewport {
+  overflow: hidden;
+}
+
+.previous-events-slides {
+  display: flex;
+  transition: transform 300ms ease-in-out;
+}
+
+.previous-event-slide {
+  flex: 0 0 100%;
+  padding: 0 3rem;
+}
+
+.previous-event-image {
+  min-height: 22rem;
+  position: relative;
+  color: white;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.previous-event-photo {
+  display: block;
+  width: 100%;
+  height: 22rem;
+  object-fit: cover;
+}
+
+.previous-event-name {
+  position: absolute;
+  top: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  width: max-content;
+  max-width: calc(100% - 3rem);
+}
+
+.previous-event-date {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.25rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.previous-events-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.previous-events-control-previous {
+  left: 0;
+}
+
+.previous-events-control-next {
+  right: 0;
+}
+
+.previous-events-dot {
+  margin: 0 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .exec-team-list > .columns {
+    margin-bottom: 1rem;
+  }
+
+  .exec-member-photo {
+    width: 5.5rem;
+    height: 5.5rem;
+    flex-basis: 5.5rem;
+  }
+
+  .previous-event-slide {
+    padding: 0 2.5rem;
+  }
+}

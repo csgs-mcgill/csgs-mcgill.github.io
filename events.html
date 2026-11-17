@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CSGS McGill - Computer Science Graduate Society">
+    <title>Events | CSGS McGill</title>
+    <link rel="icon" type="image/x-icon" href="assets/imgs/csgs_logo.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/navbar_help.js"></script>
+</head>
+
+<body class="has-navbar-fixed-top">
+    <nav class="navbar is-fixed-top is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <img height="150" src="assets/imgs/csgs_logo.svg" alt="CSGS Logo">
+                <span>CSGS McGill</span>
+            </a>
+            <!-- Hamburger menu -->
+            <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="CSGSnavbar">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="CSGSnavbar" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a class="navbar-item" href="index.html"> Home </a>
+                    <a class="navbar-item" href="about.html"> About </a>
+                    <a class="navbar-item has-text-weight-bold" href="events.html"> Events </a>
+                    <a class="navbar-item" href="resources.html"> Resources </a>
+                    <!-- <a class="navbar-item" href="contact.html"> Contact Us! </a> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-fullheight hero-background">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <iframe src="https://calendar.google.com/calendar/embed?src=cae315e43f0506fc597837ea7b93f9e8a2fa0beea543f9f088275b17b7448eb8%40group.calendar.google.com&ctz=America%2FToronto" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="previous-events" class="section">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered has-text-primary">Previous Events</h2>
+
+            <div class="previous-events-carousel" data-carousel aria-label="Previous events">
+                <div class="previous-events-viewport">
+                    <div class="previous-events-slides">
+                        
+                        
+                        <article class="previous-event-slide" data-slide>
+                            <div class="previous-event-image has-background-grey-dark">
+                                <img src="assets/imgs/events/Hike.jpg" alt="Mount Royal hike" class="previous-event-photo">
+                                <div class="previous-event-name">Mount Royal hike</div>
+                                <time class="previous-event-date" datetime="2026-10-06">October 6, 2026</time>
+                            </div>
+                        </article>
+                        <article class="previous-event-slide" data-slide>
+                            <div class="previous-event-image has-background-grey-dark">
+                                <div class="previous-event-name">Board Game Night</div>
+                                <time class="previous-event-date" datetime="2026-10-22">October 22, 2026</time>
+                            </div>
+                        </article>
+                        <article class="previous-event-slide" data-slide>
+                            <div class="previous-event-image has-background-grey-dark">
+                                <div class="previous-event-name">Lab Open House</div>
+                                <time class="previous-event-date" datetime="2026-11-2">November 2, 2026</time>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <button class="button is-primary previous-events-control previous-events-control-previous"
+                    type="button" data-carousel-previous aria-label="Previous event">
+                    <span aria-hidden="true">&larr;</span>
+                </button>
+                <button class="button is-primary previous-events-control previous-events-control-next" type="button"
+                    data-carousel-next aria-label="Next event">
+                    <span aria-hidden="true">&rarr;</span>
+                </button>
+            </div>
+
+            <div class="has-text-centered mt-4" data-carousel-dots aria-label="Choose a previous event"></div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+    <div class="content has-text-centered has-text-dark">
+        <p>&copy; <span data-current-year>2026</span> CSGS McGill</p>
+    </div>
+    </footer>
+</body>
+
+</html>
